@@ -1,7 +1,7 @@
 # Chilong
 
 ## What is Chilong?
-Chilong is a program that sets Discord Rich Presence status for [SumatraPDF](https://github.com/sumatrapdfreader/sumatrapdf), a [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software) reader application that can read `*.pdf`, [`*.epub`](https://en.wikipedia.org/wiki/EPUB), [`*.mobi`](https://en.wikipedia.org/wiki/Comparison_of_e-book_formats#Mobipocket), and [comic book archives](https://en.wikipedia.org/wiki/Comic_book_archive) (`*.cbz`, `*.cbr`, `*.cb7`, etc.), among other files.
+Chilong is a program that sets Discord Rich Presence (RPC) status for [SumatraPDF](https://github.com/sumatrapdfreader/sumatrapdf), a [FOSS](https://en.wikipedia.org/wiki/Free_and_open-source_software) reader application that can read `*.pdf`, [`*.epub`](https://en.wikipedia.org/wiki/EPUB), [`*.mobi`](https://en.wikipedia.org/wiki/Comparison_of_e-book_formats#Mobipocket), and [comic book archives](https://en.wikipedia.org/wiki/Comic_book_archive) (`*.cbz`, `*.cbr`, `*.cb7`, etc.), among other files. It uses [Lachee's C# Discord RPC](https://github.com/Lachee/discord-rpc-csharp) library to set RPC.
 
 ## How do I run it?
 When releases are available, you'll be able to download binaries from the [releases tab](https://github.com/MechaDragonX/Chilong/releases). For now, you can compile the code using Visual Studio.
