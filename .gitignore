@@ -338,6 +338,3 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
-
-# win-info Build Files
-win-info/
