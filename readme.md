@@ -16,4 +16,4 @@ SumatraPDF is named after the tropical island of [Sumatra](https://en.wikipedia.
 Well...it's functional, but it doesn't look the way I want it to or have all the features I want it to...so let's say it's *in progress*.
 
 ## Special Thanks
-Special thanks to (BloodDragooner)[https://github.com/BloodDragooner] for the idea and help with testing!
+Special thanks to [BloodDragooner](https://github.com/BloodDragooner) for the idea and help with testing!
