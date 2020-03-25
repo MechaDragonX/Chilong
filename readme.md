@@ -7,7 +7,7 @@ Chilong is a program that sets Discord Rich Presence (RPC) status for [SumatraPD
 When releases are available, you'll be able to download binaries from the [releases tab](https://github.com/MechaDragonX/Chilong/releases). For now, you can compile the code using Visual Studio.
 
 ## Is it functional?
-Not really. See the [issues](https://github.com/MechaDragonX/Chilong/issues)...
+At the moment it should be... Check the [issues](https://github.com/MechaDragonX/Chilong/issues) tab for any issues.
 
 ## What the hell is this name?
 SumatraPDF is named after the tropical island of [Sumatra](https://en.wikipedia.org/wiki/Sumatra) in Indonesia. In southeast and east Asian mythology and Chinese folk religion, there are 4 [Dragon Kings](https://en.wikipedia.org/wiki/Dragon_King) (四海龍王, Sìhǎi Lóngwáng). They, along with the [Yellow Dragon](https://en.wikipedia.org/wiki/Yellow_Dragon) (黃龍, Huánglóng) maintain peace and harmony in the universe. The Dragon King of the south, is the known as the Red Dragon (赤龍 [Chìlóng] or 朱龍 [Zhūlóng], literally "Cinnabar Dragon", "Vermilion Dragon"). He is the parton of the South China Sea, which borders Sumatra, and is associated with summer and fire, which fits Sumatra being a hot, tropical island.
