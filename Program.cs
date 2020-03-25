@@ -8,7 +8,7 @@ namespace Chilong
     {
         static void Main(string[] args)
         {
-            if(Process.GetProcessesByName("SumatraPDF") == null)
+            if(Process.GetProcessesByName("SumatraPDF").Length == 0)
             {
                 Console.WriteLine("SumatraPDF was not found! Is it open?");
                 return;
@@ -32,7 +32,7 @@ namespace Chilong
                     State = "State Placeholder",
                     Timestamps = new Timestamps
                     {
-                        Start = sumatra.StartTime
+                        Start = DateTime.Now
                     }
                 });
                 if(client.CurrentPresence == null)
