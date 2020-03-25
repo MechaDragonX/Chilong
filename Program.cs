@@ -15,8 +15,6 @@ namespace Chilong
             }
 
             Process sumatra = Process.GetProcessesByName("SumatraPDF")[0];
-            Console.WriteLine("Id: {0}, MainWindowTitle: {1}", sumatra.Id, sumatra.MainWindowTitle);
-
             using(DiscordRpcClient client = new DiscordRpcClient("692113594623721514"))
             {
                 if(!client.Initialize())
@@ -40,15 +38,16 @@ namespace Chilong
                     Console.WriteLine("Setting presence was not successful!");
                     return;
                 }
-
                 Console.WriteLine("Presence successfully set!");
-                Console.WriteLine("Details: {0}\nState: {1}\nStartTime: {2}",
-                    client.CurrentPresence.Details, client.CurrentPresence.State, client.CurrentPresence.Timestamps.Start);
                 
                 while(true)
                 {
                     if(Process.GetProcessesByName("SumatraPDF").Length == 0)
+                    {
+                        client.UpdateEndTime();
+                        client.ClearPresence();
                         return;
+                    }
                 }
             }
         }
