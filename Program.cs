@@ -44,7 +44,12 @@ namespace Chilong
                 Console.WriteLine("Presence successfully set!");
                 Console.WriteLine("Details: {0}\nState: {1}\nStartTime: {2}",
                     client.CurrentPresence.Details, client.CurrentPresence.State, client.CurrentPresence.Timestamps.Start);
-                Console.ReadKey();
+                
+                while(true)
+                {
+                    if(Process.GetProcessesByName("SumatraPDF").Length == 0)
+                        return;
+                }
             }
         }
     }
