@@ -1,6 +1,7 @@
 ﻿using DiscordRPC;
 using System;
 using System.Diagnostics;
+using System.Linq;
 
 namespace Chilong
 {
@@ -8,13 +9,13 @@ namespace Chilong
     {
         static void Main(string[] args)
         {
-            if(Process.GetProcessesByName("SumatraPDF").Length == 0)
+            if(Process.GetProcesses().ToList().Where(x => x.ProcessName.StartsWith("SumatraPDF")).Count() == 0)
             {
                 Console.WriteLine("SumatraPDF was not found! Is it open?");
                 return;
             }
 
-            Process sumatra = Process.GetProcessesByName("SumatraPDF")[0];
+            Process sumatra = Process.GetProcesses().ToList().Where(x => x.ProcessName.StartsWith("SumatraPDF")).ToList()[0];
             using(DiscordRpcClient client = new DiscordRpcClient("692113594623721514"))
             {
                 if(!client.Initialize())
@@ -42,7 +43,7 @@ namespace Chilong
                 
                 while(true)
                 {
-                    if(Process.GetProcessesByName("SumatraPDF").Length == 0)
+                    if(Process.GetProcesses().ToList().Where(x => x.ProcessName.StartsWith("SumatraPDF")).Count() == 0)
                     {
                         client.UpdateEndTime();
                         client.ClearPresence();
