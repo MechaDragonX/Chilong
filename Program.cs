@@ -13,6 +13,7 @@ namespace Chilong
 
             using(DiscordRpcClient client = new DiscordRpcClient("692113594623721514"))
             {
+                client.Initialize();
                 Console.WriteLine("Client successfully started!");
                 client.SetPresence(new RichPresence
                 {
