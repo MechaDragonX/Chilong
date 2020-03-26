@@ -29,9 +29,11 @@ namespace Chilong
                 {
                     Details = sumatra.MainWindowTitle.TrimEnd(" - SumatraPDF".ToCharArray()),
                     State = "State Placeholder",
-                    Timestamps = new Timestamps
+                    Timestamps = new Timestamps(DateTime.Now),
+                    Assets = new Assets()
                     {
-                        Start = DateTime.Now
+                        LargeImageKey = "sumatra",
+                        LargeImageText = "SumatraPDF"
                     }
                 });
                 if(client.CurrentPresence == null)
@@ -45,7 +47,7 @@ namespace Chilong
                 {
                     if(Process.GetProcesses().ToList().Where(x => x.ProcessName.StartsWith("SumatraPDF")).Count() == 0)
                     {
-                        client.UpdateEndTime();
+                        // client.UpdateEndTime();
                         client.ClearPresence();
                         return;
                     }
