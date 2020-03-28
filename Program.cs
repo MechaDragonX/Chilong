@@ -31,9 +31,9 @@ namespace Chilong
 
         private static void Initialize()
         {
-            client = new DiscordRpcClient("692113594623721514")
+            client = new DiscordRpcClient("692113594623721514");
 
-            if (Process.GetProcesses().Where(x => x.ProcessName.StartsWith("SumatraPDF")).Count() == 0)
+            if(Process.GetProcesses().Where(x => x.ProcessName.StartsWith("SumatraPDF")).Count() == 0)
             {
                 Console.WriteLine("SumatraPDF was not found! Is it open?");
                 return;
