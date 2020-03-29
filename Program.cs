@@ -90,7 +90,7 @@ namespace Chilong
             {
                 process = Process.GetProcesses().Where(x => x.ProcessName.StartsWith("SumatraPDF")).ToList()[0];
             }
-            catch (IndexOutOfRangeException) { return; }
+            catch(Exception) { return; }
 
             if (process.MainWindowTitle != windowTitle)
             {
@@ -101,9 +101,13 @@ namespace Chilong
         }
         private static void SetNewPresence()
         {
+            string details = windowTitle.TrimEnd(" - SumatraPDF".ToCharArray());
+            if(details == " " || details == "")
+                details = "Picking Something New to Read";
+
             client.SetPresence(new RichPresence
             {
-                Details = sumatra.MainWindowTitle.TrimEnd(" - SumatraPDF".ToCharArray()),
+                Details = details,
                 State = "State Placeholder",
                 Timestamps = new Timestamps(DateTime.UtcNow),
                 Assets = new Assets()
