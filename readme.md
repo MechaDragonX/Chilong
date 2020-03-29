@@ -15,5 +15,11 @@ SumatraPDF is named after the tropical island of [Sumatra](https://en.wikipedia.
 ## When will this be done?
 Well...it's functional, but it doesn't look the way I want it to or have all the features I want it to...so let's say it's *in progress*.
 
+## Upcoming Features
+- Idle status when not using a program (currently shows up with blank details)
+- Setting current page and reading mode in the status
+- A program icon
+- Running as a system tray application so that it can update the background and you don't need to worry about it
+
 ## Special Thanks
 Special thanks to [BloodDragooner](https://github.com/BloodDragooner) for the idea and help with testing!
