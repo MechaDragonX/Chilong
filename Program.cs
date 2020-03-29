@@ -103,7 +103,7 @@ namespace Chilong
         {
             string details = windowTitle.TrimEnd(" - SumatraPDF".ToCharArray());
             if(details == " " || details == "")
-                details = "Picking Something New to Read";
+                details = "Picking a New File";
 
             client.SetPresence(new RichPresence
             {
